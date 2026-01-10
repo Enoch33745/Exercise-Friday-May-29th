@@ -2,10 +2,10 @@ from mod import auto_gene
 try:
     while True:
         print("HELLO, WELCOME. CREATE A PASSWORD TO LOGIN TO YOUR INFORMATION")
-        psn = int(input("How long do you want your password to be? "))
+        msn = int(input("How long do you want your password to be? "))
         print("Would you like to create your own password by yourself or you would want it to be generated" )
         ans = str(input("reply with (auto generate) for it to be generated and (manual) for it to create it yourself "))
-        a = auto_gene(psn)
+        a = auto_gene(msn)
 
         if ans.lower() == "manual":
             man_pas = print(input("Enter your password "))
@@ -23,7 +23,7 @@ try:
     while True:
         print("HELLO, PLEASE ENTER YOUR VALID CREDIENTIALS TO ACCESS YOUR INFORMATION")
         psch = input("Enter you password: ")
-        if psch == a or man_pas:
+        if psch == a or psch == man_pas:
             print("LOGIN SUCCESFUL")
             print(f'Your name is {name} and you are {age} years old. The name of your hometown is {home_town} and it is located in {region}.The name of the school you attended is {name_of_school}')
             break
