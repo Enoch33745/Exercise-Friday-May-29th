@@ -42,14 +42,14 @@
 
 
 
-try:
-    num = int(input("Enter a number to check if positive or negative: "))
-    if num < 0:
-        print("The number is a negative number")
-    else:
-        print("The number is a positive number")
-except ValueError:
-      print("Invalid response enter a number to check")
+# try:
+#     num = int(input("Enter a number to check if positive or negative: "))
+#     if num < 0:
+#         print("The number is a negative number")
+#     else:
+#         print("The number is a positive number")
+# except ValueError:
+#       print("Invalid response enter a number to check")
 
 
 # for i in range(1,11,1):
