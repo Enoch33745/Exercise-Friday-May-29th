@@ -8,8 +8,14 @@ try:
         a = auto_gene(msn)
 
         if ans.lower() == "manual":
-            man_pas = print(input("Enter your password "))
-            print(f'This is the password you created: {man_pas}')
+            man_pas = input("Enter your password ")
+            name = str(input("Enter your name: "))
+            age = int(input("How old are your? "))
+            home_town = str(input("What's the name of your hometown? "))
+            region = str(input("Which region is your hometown located in? "))
+            name_of_school = str(input("What's the name of your school? "))
+            print(f'This is the password you created: {man_pas} ')
+            break
         elif ans.lower() == "auto generate":
             print(f'This is your auto generated password: {a}')
             
@@ -32,6 +38,7 @@ try:
             continue
 except(ValueError):
     print("Sorry wrong input, enter the valid type of characters for each answer")
+
 
   
 
